@@ -6,39 +6,47 @@ interface HeroProps {
   visible: boolean;
 }
 
-// Background (beige)          #F5EFE6
-// Section Alternate           #E8DCCB
-// Soft Brown (headings)       #8B6F5A
-// Deep Brown (accents/shadow) #4E3B31
-// Champagne Gold (buttons)    #D6BFA3
-// Champagne Hover (richer)    #C9A989
-// Borders / Dividers          #F2E4D3
-  // Palette tuned for champagne gold + beige + soft brown
- // Palette tuned to motif: sage green, muted sage, warm ivory, powder blue, steel blue, luxury silver
+// --color-motif-deep:   #8B7FBF; /* sage green   — primary, headings, overlays  */
+// --color-motif-medium: #7FA8A3; /* muted sage   — secondary text               */
+// --color-motif-accent: #F2A7B5; /* steel blue   — deeper accent, dividers       */
+// --color-motif-cream:  #F8F9FF; /* warm ivory   — surfaces, light text on dark  */
+// --color-motif-soft:    #EAF7F5; /* powder blue  — highlights, glow, progress    */
+// --color-motif-silver: #B8C4D6; 
  const palette = {
-  deep: '#5B6655',    // sage green — primary elegance, headings, borders
-  medium: '#9CAA99',  // soft muted sage — secondary text, subtle elements
-  accent: '#8799A7',  // steel blue — deeper accent, hashtag, dividers
-  cream: '#ECE5DB',   // warm ivory — surfaces, overlays, light text on dark
-  soft: '#C4D1E2',    // powder blue — highlights, glow accents, progress fill
-  silver: '#A9A9A9',  // luxury silver — neutral separators, track backgrounds
+  deep: '#8B7FBF',    // sage green — primary elegance, headings, borders
+  medium: '#7FA8A3',  // soft muted sage — secondary text, subtle elements
+  accent: '#F2A7B5',  // steel blue — deeper accent, hashtag, dividers
+  cream: '#F8F9FF',   // warm ivory — surfaces, overlays, light text on dark
+  soft: '#EAF7F5',    // powder blue — highlights, glow accents, progress fill
+  silver: '#B8C4D6',  // luxury silver — neutral separators, track backgrounds
 };
 
 
 const desktopImages: string[] = [
+  '/desktop-background/couple (1).jpeg',
   '/desktop-background/couple (1).jpg',
-  '/desktop-background/couple (2).jpg',
-  '/desktop-background/couple (3).jpg',
-  '/desktop-background/couple (4).jpg',
-  '/desktop-background/couple (5).jpg'
+  '/desktop-background/couple (1).png',
+  '/desktop-background/couple (2).png',
+  '/desktop-background/couple (3).png',
 ];
 
 const mobileImages: string[] = [
-  '/mobile-background/couple (21).jpg',
+  '/mobile-background/couple (1).jpeg',
+  '/mobile-background/couple (1).jpg',
+  '/mobile-background/couple (2).jpg',
+  '/mobile-background/couple (3).jpg',
+  '/mobile-background/couple (4).jpg',
+  '/mobile-background/couple (5).jpg',
+  '/mobile-background/couple (6).jpg',
+  '/mobile-background/couple (7).jpg',
+  '/mobile-background/couple (8).jpg',
+  '/mobile-background/couple (9).jpg',
+  '/mobile-background/couple (10).jpg',
   '/mobile-background/couple (11).jpg',
-  '/mobile-background/couple (16).jpg',
-  '/mobile-background/couple (21).jpg',
-  '/mobile-background/couple (14).jpg'
+  '/mobile-background/couple (12).jpg',
+  '/mobile-background/couple (13).jpg',
+  '/mobile-background/couple (14).jpg',
+  '/mobile-background/couple (15).jpg',
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -155,7 +163,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               }}
             >
               <Image
-                src="/monogram/newmonogram.png"
+                src="/monogram/monogram.png"
                 alt="Monogram"
                 fill
                 className="object-contain"
@@ -179,8 +187,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Great Vibes", cursive',
               fontWeight: 400,
-              color: palette.deep, // #F5EFE6
-              textShadow: '0 0 18px rgb(245, 239, 230)',
+              color: palette.cream, // #F5EFE6
+              textShadow: '0 0 18px rgb(139, 127, 191)',
             }}
           >
             You are
@@ -193,7 +201,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Cinzel", serif',
               fontWeight: 700,
-              color: palette.deep, // #F5EFE6
+              color: palette.cream, // #F5EFE6
               textShadow: '0 0 22px rgba(245, 239, 230, 0.95)',
               letterSpacing: '0.05em',
             }}

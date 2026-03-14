@@ -27,7 +27,7 @@ const palette = {
 } as const
 
 const DECO_FILTER =
-  "brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(486%) hue-rotate(62deg) brightness(94%) contrast(88%)"
+  "brightness(0) saturate(100%) invert(55%) sepia(16%) saturate(1080%) hue-rotate(213deg) brightness(90%) contrast(90%)"
 
 // Helper function to convert text to title case (first letter of each word uppercase)
 const toTitleCase = (str: string) => {
@@ -155,7 +155,7 @@ export function Footer() {
         >
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 opacity-95">
             <Image
-              src="/monogram/newmonogram.png"
+              src="/monogram/monogram.png"
               alt={`${groomNickname} & ${brideNickname} monogram`}
               fill
               className="object-contain"

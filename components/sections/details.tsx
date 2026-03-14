@@ -40,10 +40,10 @@ export function Details() {
   const [rotationOffset, setRotationOffset] = useState(0)
   
   const coupleImages = [
-    "/mobile-background/couple (7).jpg",
-    "/mobile-background/couple (10).jpg",
-    "/mobile-background/couple (13).jpg",
-    "/mobile-background/couple (16).jpg",
+    "/mobile-background/couple (2).jpg",
+    "/mobile-background/couple (3).jpg",
+    "/mobile-background/couple (5).jpg",
+    "/mobile-background/couple (4).jpg",
   ]
 
   const receptionImages = [
@@ -105,7 +105,7 @@ export function Details() {
   const formattedCeremonyDate = siteConfig.ceremony.date
   const formattedReceptionDate = siteConfig.ceremony.date // reception follows ceremony on same day
 
-  const DECO_FILTER = "brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(486%) hue-rotate(62deg) brightness(94%) contrast(88%)"
+  const DECO_FILTER = " brightness(0) saturate(100%) invert(55%) sepia(16%) saturate(1080%) hue-rotate(213deg) brightness(90%) contrast(90%)"
 
   const openInMaps = (link: string) => {
     window.open(link, '_blank', 'noopener,noreferrer')
@@ -251,14 +251,14 @@ export function Details() {
                 {/* Month - Script style with warm gold */}
                 <div className="mb-2 sm:mb-4">
                   <p className={`${cinzel.className} text-xl sm:text-2xl md:text-3xl lg:text-4xl text-motif-medium leading-none`}>
-                    May
+                    June
                   </p>
                 </div>
                 
                 {/* Day and Year */}
                 <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-7">
                   <p className={`${cinzel.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-motif-deep leading-none`}>
-                    18
+                    12
                   </p>
                   <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-motif-medium via-motif-deep to-motif-medium" />
                   <p className={`${cinzel.className} text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-motif-deep leading-none`}>
@@ -346,7 +346,7 @@ export function Details() {
         </div>
 
         {/* Reception Card */}
-        <div className="relative group">
+        {/* <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
 
           <div className="relative elegant-card bg-motif-cream rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.18)] border border-motif-deep/25 premium-shadow hover:border-motif-deep/45 transition-all duration-300">
@@ -468,7 +468,7 @@ export function Details() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Attire Information */}

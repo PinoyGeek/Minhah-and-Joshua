@@ -1,43 +1,43 @@
 export const siteConfig = {
   couple: {
-    bride: "Ltryl B. Benitez",
-    brideNickname: "Ltryl ",
-    groom: "Noenyl Bryle M. Gonzaga",
-    groomNickname: "Bryle",
+    bride: "Christianne Minhah C. Teppang",
+    brideNickname: "Minhah ",
+    groom: "Joshua C. Tan",
+    groomNickname: "Joshua",
   },
   wedding: {
-    date: "May 18, 2026",
+    date: "June 12, 2026",
     time: "3:00 PM",
-    venue: "Farm Hills Garden, Silang, Cavite",
+    venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
     tagline: "are getting married!",
-    theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
-    motif: "#5B6655, #9CAA99, #ECE5DB, #C4D1E2, #8799A7, #A9A9A9",
+    theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Lavender, Mint Green, Pink, Sky Blue",
+    motif: "#e6e6fa, #d1fff4 , #ffd1dc , #d1f3ff",
   },
   details: {
     rsvp: {
-      deadline: "April 15, 2026.",
-      contact: "Ltryl B. Benitez",
-      phone: "0936 815 3245",
+      deadline: "June 1, 2026.",
+      contact: "Christianne Minhah C. Teppang",
+      phone: "0955 815 3245",
     },
   },
   ceremony: {
-    location: "Farm Hills Garden, Silang, Cavite",
-    venue: "Farm Hills Garden, Silang, Cavite",
-    date: "May 18, 2026",
-    day: "Monday",
+    location: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
+    venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
+    date: "June 12, 2026",
+    day: "Friday",
     time: "3:00 PM",
     entourageTime: "2:00 PM",
     guestsTime: "2:30 PM",
   },
   reception: {
-    location: "Farm Hills Garden, Silang, Cavite",
-    venue: "Farm Hills Garden, Silang, Cavite",
-    date: "May 18, 2026",
+    location: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
+    venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
+    date: "June 12, 2026",
     time: "4:00 PM",
   },
   dressCode: {
       theme: "SEMI-FORMAL",
-    colors: "#5B6655, #9CAA99, #ECE5DB, #C4D1E2, #8799A7, #A9A9A9",
+    colors: "#e6e6fa, #d1fff4 , #ffd1dc , #d1f3ff",
     sponsors: {
       male: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       female: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers."
@@ -76,8 +76,8 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     secondary: "#F5F5DC",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1OHc4gq4VHPequrPTjIrV6-YpZ5ctk9lo?usp=sharing",
-    hashtag: ["#BryleAndLtryl", "#LtrylAndBryle", "#BryleAndLtrylWedding"],
+    googleDriveLink: "https://drive.google.com/drive/folders/1v9XDBhvcCDORsyGfYSlrXFnaAkPAi8QI?usp=sharing",
+    hashtag: ["#ChristianneAndJoshua", "#JoshuaAndChristianne", "#ChristianneAndJoshuaWedding"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

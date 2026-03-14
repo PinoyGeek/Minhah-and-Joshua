@@ -21,7 +21,7 @@ const cinzel = Cinzel({
 
 // QRCodeCanvas renders to <canvas> which cannot resolve CSS variables.
 // This hex must match --color-motif-deep defined in globals.css.
-const MOTIF_DEEP_HEX = "#5B6655"
+const MOTIF_DEEP_HEX = "#8B7FBF"
 
 export function SnapShare() {
   const [copiedHashtagIndex, setCopiedHashtagIndex] = useState<number | null>(null)

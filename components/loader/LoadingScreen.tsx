@@ -11,12 +11,12 @@ interface LoadingScreenProps {
 // motif: "#5B6655, #9CAA99, #ECE5DB, #C4D1E2, #8799A7, #A9A9A9",
 // Countdown boxes with color photos - numbers show days, hours, minutes
 const COUNTDOWN_BOXES = [
-  { src: '/frontboxes/box (3).jpg' },
+  { src: '/frontboxes/box (1).jpg' },
   { src: '/frontboxes/box (2).jpg' },
   { src: '/frontboxes/box (1).jpg' },
 ];
 
-const MAIN_BW_IMAGE = '/frontboxes/front.jpg';
+const MAIN_BW_IMAGE = '/frontboxes/Front.jpg';
 const STAGGER_DELAY_MS = 4000; // Each image appears every 4 seconds
 const BOX_TRANSITION_MS = 1200; // Slow, smooth transition
 const TOTAL_DURATION_MS = COUNTDOWN_BOXES.length * STAGGER_DELAY_MS + 3000;
@@ -102,7 +102,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   }, [onComplete]);
 
   const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`;
-  const hashtag = '#LtrylAndBryle';
+  const hashtag = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`;
   const productionCredit = '';
 
 

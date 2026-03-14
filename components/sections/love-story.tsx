@@ -34,12 +34,14 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="First Met (2014)"
-        imageSrc="/LoveStory/img1.png"
+        // title="First Met (2014)"
+        imageSrc="/desktop-background/couple (3).png"
         text={
           <>
             <p className="mb-4">
-            Met as first-year students at the Adventist University of the Philippines. What began as a simple classroom encounter slowly turned into a meaningful friendship
+            It all began during the pandemic.
+A time when the world felt uncertain and both of us were quietly healing from our own pasts. In the middle of that season, life had a gentle surprise waiting for us.
+
             </p>
            
           </>
@@ -50,12 +52,13 @@ export function LoveStory() {
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/LoveStory/img2.png"
-        title="Became a Couple (2019)"
+        imageSrc="/mobile-background/couple (15).jpg"
+        // title="Became a Couple (2019)"
         text={
           <>
             <p>
-            After years of getting to know each other, we finally made it official. Our story began at AUP, and we made it official at MVC as we toured around Mindanao together
+            We met through our ever-trusted cupids, Ghen and Jed. What we believed would only be a casual meet-up, turned out to be fate’s quiet setup.
+
             </p>
           </>
         }
@@ -66,12 +69,46 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/LoveStory/img3.png"
-        title="The Proposal (2025)"
+        imageSrc="/mobile-background/couple (8).jpg"
+        // title="The Proposal (2025)"
         text={
           <>
             <p>
-            As we continue chasing our dreams, we also choose to begin our greatest journey — becoming one. With love, faith, and God at the center, we said yes to forever
+            From that moment on, everything felt easy and natural. What started as simple chats slowly turned into deeper conversations, filled with laughter, stories, and moments that made us look forward to the next day.
+
+            </p>
+           
+          </>
+        }
+      />
+
+      {/* SECTION 4: Middle - Light */}
+      <StorySection
+        theme="dark"
+        layout="image-right"
+        imageSrc="/mobile-background/couple (5).jpg"
+        // title="Became a Couple (2019)"
+        text={
+          <>
+            <p>
+            Neither of us expected that day to change our lives. We walked in as strangers brought together by friends and walked out unknowingly carrying a small spark that would eventually grow into the love story we now share.
+            </p>
+          </>
+        }
+      />
+
+      {/* SECTION 5: Middle - Light */}
+      <StorySection
+        theme="light"
+        layout="image-left"
+        isLast={true}
+        imageSrc="/mobile-background/couple (3).jpg"
+        // title="The Proposal (2025)"
+        text={
+          <>
+            <p>
+            Now, we look forward to the next chapter of our story: beginning our forever together.
+
             </p>
            
           </>

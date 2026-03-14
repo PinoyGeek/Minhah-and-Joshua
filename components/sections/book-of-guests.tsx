@@ -40,7 +40,7 @@ const BOOK_DARK = "var(--color-motif-deep)"      // headings / names
 const BOOK_DARKER = "var(--color-motif-deep)"  // body text (steel blue depth)
 const BOOK_CREAM = "var(--color-motif-cream)"    // card surfaces
 const DECO_FILTER_BOOK =
-  "brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(486%) hue-rotate(62deg) brightness(94%) contrast(88%)"
+   "brightness(0) saturate(100%) invert(55%) sepia(16%) saturate(1080%) hue-rotate(213deg) brightness(90%) contrast(90%)"
 
 export function BookOfGuests() {
   const [totalGuests, setTotalGuests] = useState(0)
