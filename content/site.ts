@@ -21,11 +21,11 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
-    venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
+    location: "St. Michael the Archangel Parish, Bacoor Cavite",
+    venue: "St. Michael the Archangel Parish, Bacoor Cavite",
     date: "June 12, 2026",
     day: "Friday",
-    time: "3:00 PM",
+    time: "2:00 PM",
     entourageTime: "2:00 PM",
     guestsTime: "2:30 PM",
   },
@@ -77,7 +77,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
   },
   snapShare: {
     googleDriveLink: "https://drive.google.com/drive/folders/1v9XDBhvcCDORsyGfYSlrXFnaAkPAi8QI?usp=sharing",
-    hashtag: ["#ChristianneAndJoshua", "#JoshuaAndChristianne", "#ChristianneAndJoshuaWedding"],
+    hashtag: ["#JOSHfoundhisMINHAHmahal", "#MINHAHmadetherightJOSHision"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

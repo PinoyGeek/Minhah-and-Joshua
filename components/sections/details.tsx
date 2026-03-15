@@ -216,7 +216,7 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
               <Image
-                src="/Details/ceremony.png"
+                src="/Details/ceremony2.png"
                 alt={siteConfig.ceremony.location}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -346,7 +346,7 @@ export function Details() {
         </div>
 
         {/* Reception Card */}
-        {/* <div className="relative group">
+        <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
 
           <div className="relative elegant-card bg-motif-cream rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.18)] border border-motif-deep/25 premium-shadow hover:border-motif-deep/45 transition-all duration-300">
@@ -360,7 +360,7 @@ export function Details() {
                   }`}
                 >
                   <Image
-                    src="/Details/reception.png"
+                    src="/Details/ceremony.png"
                     alt={siteConfig.reception.venue}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -468,7 +468,7 @@ export function Details() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Attire Information */}
