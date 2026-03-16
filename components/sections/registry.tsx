@@ -40,12 +40,9 @@ export function Registry() {
         </h2>
         
         <p className="text-xs sm:text-sm md:text-base lg:text-lg text-motif-cream/90 font-light max-w-2xl mx-auto leading-relaxed px-2">
-        Your presence on our special day is already the greatest gift we could ask for, and celebrating this moment with you means so much to us.
-
-If you wish to bless us further as we begin our journey as husband and wife, you may scan any of the codes below to share your love and support. 
-
-We truly appreciate and thank you for the love and generosity. This means so much as we step into this new chapter of our lives. 
-
+        Your presence at our wedding is the greatest gift of all.
+        <br />
+        However, if you wish to bless us further as we begin our life together, a monetary gift would be truly appreciated, or you are warmly invited to join our Prosperity Dance during the celebration.
         </p>
         
         <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
@@ -58,9 +55,9 @@ We truly appreciate and thank you for the love and generosity. This means so muc
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
   {/* GCASH QR toggle */}
   <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 mb-6 sm:mb-8">
-        <h3 className={`${cinzel.className} text-xl sm:text-2xl md:text-3xl font-normal text-motif-cream text-center mb-4 sm:mb-6`}>
+        {/* <h3 className={`${cinzel.className} text-xl sm:text-2xl md:text-3xl font-normal text-motif-cream text-center mb-4 sm:mb-6`}>
           BPI
-        </h3>
+        </h3> */}
         <div className="flex flex-col items-center gap-4 sm:gap-6">
           {/* Toggle buttons */}
           {/* <div className="inline-flex rounded-lg border border-motif-cream/40 bg-motif-cream/5 p-1">
@@ -80,7 +77,7 @@ We truly appreciate and thank you for the love and generosity. This means so muc
             ))}
           </div> */}
           {/* Active QR image */}
-          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-xl overflow-hidden bg-white shadow-lg">
+          {/* <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-xl overflow-hidden bg-white shadow-lg">
             <Image
               src="/QR/BPI.png"
               alt="BPI QR code"
@@ -88,7 +85,7 @@ We truly appreciate and thank you for the love and generosity. This means so muc
               className="object-contain p-2"
               sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, 256px"
             />
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -25,7 +25,7 @@ export function LoveStory() {
           Our Love Story
         </h1>
         <p className={`${cinzel.className} text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-motif-medium mb-1`}>
-          Every photograph tells a story of {siteConfig.couple.brideNickname} & {siteConfig.couple.groomNickname}'s journey to forever
+          Every photograph tells a story of our journey to forever
         </p>
       </div>
 

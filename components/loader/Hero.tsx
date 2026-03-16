@@ -6,19 +6,19 @@ interface HeroProps {
   visible: boolean;
 }
 
-// --color-motif-deep:   #8B7FBF; /* sage green   — primary, headings, overlays  */
-// --color-motif-medium: #7FA8A3; /* muted sage   — secondary text               */
-// --color-motif-accent: #F2A7B5; /* steel blue   — deeper accent, dividers       */
+// --color-motif-deep:   #4A6E8D; /* sage green   — primary, headings, overlays  */
+// --color-motif-medium: #A4C8E1; /* muted sage   — secondary text               */
+// --color-motif-accent: #8B7FBF; /* steel blue   — deeper accent, dividers       */
 // --color-motif-cream:  #F8F9FF; /* warm ivory   — surfaces, light text on dark  */
 // --color-motif-soft:    #EAF7F5; /* powder blue  — highlights, glow, progress    */
-// --color-motif-silver: #B8C4D6; 
+// --color-motif-silver: #F8F9FF;
  const palette = {
-  deep: '#8B7FBF',    // sage green — primary elegance, headings, borders
-  medium: '#7FA8A3',  // soft muted sage — secondary text, subtle elements
-  accent: '#F2A7B5',  // steel blue — deeper accent, hashtag, dividers
+  deep: '#4A6E8D',    // sage green — primary elegance, headings, borders
+  medium: '#A4C8E1',  // soft muted sage — secondary text, subtle elements
+  accent: '#8B7FBF',  // steel blue — deeper accent, hashtag, dividers
   cream: '#F8F9FF',   // warm ivory — surfaces, overlays, light text on dark
   soft: '#EAF7F5',    // powder blue — highlights, glow accents, progress fill
-  silver: '#B8C4D6',  // luxury silver — neutral separators, track backgrounds
+  silver: '#F8F9FF',  // luxury silver — neutral separators, track backgrounds
 };
 
 

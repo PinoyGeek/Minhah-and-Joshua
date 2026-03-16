@@ -88,12 +88,12 @@
   --font-serif: "Great Vibes", "Great Vibes Fallback";
 
   /* ─── Motif palette — edit here, affects every component ─── */
-  --color-motif-deep:   #8B7FBF; /* sage green   — primary, headings, overlays  */
-  --color-motif-medium: #7FA8A3; /* muted sage   — secondary text               */
-  --color-motif-accent: #F2A7B5; /* steel blue   — deeper accent, dividers       */
+  --color-motif-deep:   #4A6E8D; /* sage green   — primary, headings, overlays  */
+  --color-motif-medium: #A4C8E1; /* muted sage   — secondary text               */
+  --color-motif-accent: #8B7FBF; /* steel blue   — deeper accent, dividers       */
   --color-motif-cream:  #F8F9FF; /* warm ivory   — surfaces, light text on dark  */
   --color-motif-soft:    #EAF7F5; /* powder blue  — highlights, glow, progress    */
-  --color-motif-silver: #B8C4D6; /* luxury silver— borders, neutral separators   */
+  --color-motif-silver: #F8F9FF; /* luxury silver— borders, neutral separators   */
   /* ─────────────────────────────────────────────────────────── */
   --font-imperial-script: "Imperial Script", cursive;
   --color-background: var(--background);

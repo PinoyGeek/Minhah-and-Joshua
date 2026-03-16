@@ -64,7 +64,7 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    time: guestsTime,
+    time: siteConfig.ceremony.entourageTime,
     title: "Arrival",
     description: "Please arrive on time to find your seat, settle in, and get ready for the celebration.",
     location: ceremonyVenue,
@@ -80,8 +80,8 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: addHours(ceremonyTime, 1),
-    title: "Cocktail Hour",
+    time: "3:30 PM",
+    title: "Refreshments",
     description: "Enjoy drinks and light bites as we transition into the reception and mingle with guests.",
     location: receptionVenue,
     icon: CocktailIcon,
@@ -96,16 +96,16 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/reception welcom.png",
   },
   {
-    time: addHours(ceremonyTime, 3),
-    title: "Dinner Service",
+    time: "5:30 PM",
+    title: "Dinner",
     description: "Share a relaxed meal together as we continue the celebration.",
     location: receptionVenue,
     icon: DinnerIcon,
     imageSrc: "/weddingtimeline/DinnerService.png",
   },
   {
-    time: addHours(ceremonyTime, 4),
-    title: "Party",
+    time: "6:30 PM",
+    title: "Wedding Traditions ",
     description: "Let's dance the night away and celebrate this new chapter!",
     location: receptionVenue,
     icon: DanceIcon,

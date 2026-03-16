@@ -35,12 +35,17 @@ const faqItems: FAQItem[] = [
   {
     question: "When is the wedding?",
     answer:
-      `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}). The ceremony will begin promptly at ${siteConfig.ceremony.time}, and we kindly ask guests to arrive by ${siteConfig.ceremony.guestsTime} to help us begin on time. The reception will follow at ${siteConfig.reception.time}.`,
+      `Our wedding will be held on ${siteConfig.ceremony.date} (${siteConfig.ceremony.day}). The ceremony will begin promptly at ${siteConfig.ceremony.time}, and we kindly ask guests to arrive by ${siteConfig.ceremony.entourageTime} to help us begin on time. The reception will follow at ${siteConfig.reception.time}.`,
   },
   {
     question: "What time should I arrive for the ceremony?",
     answer:
       `Our ceremony will begin promptly at ${siteConfig.ceremony.time}. We kindly ask guests to arrive 30–45 minutes earlier to allow enough time for parking, walking to the ceremony area, and finding your seats so we can begin on time.`,
+  },
+  {
+    question: "Is there an entourage call time? ",
+    answer:
+   " Our entourage is requested to arrive by 1:00 PM so we can prepare and settle before the ceremony begins promptly at 2:00 PM."
   },
   {
     question: "Where will the ceremony and reception take place?",
@@ -60,9 +65,9 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I bring a guest or a date?",
     answer:
-      "If your invitation includes a plus one or lists your guest’s name, you are welcome to bring them. Otherwise, we would love to keep our wedding intimate and reserved for close family and friends, so we kindly ask guests not to bring additional companions.",
+    "While we absolutely love your little ones, our celebration will be an adults-only event, except for the children of the bride and groom’s immediate family. We hope you understand and look forward to celebrating together."
   },
-  {
+    {
     question: "Are children allowed at the event?",
     answer:
       "As much as we adore your little ones, we have decided to keep our celebration an adult-only event to maintain an intimate and relaxed atmosphere for everyone.\n\nChildren who are part of the entourage are, of course, included. Otherwise, unless your child’s name is specifically listed on your invitation and included in your RSVP, we kindly ask that only adults attend.\n\nWe truly appreciate your understanding and can’t wait to celebrate this special day with you.",
@@ -71,11 +76,6 @@ const faqItems: FAQItem[] = [
     question: "Is there a dress code?",
     answer:
       `Wedding attire details are in the Guest Information section above ${siteConfig.dressCode.note}.`,
-  },
-  {
-    question: "Can I sit anywhere at the reception?",
-    answer:
-      "Please don't. We kindly ask our guests to follow the seating arrangement prepared for the reception.\n\nA great deal of thought and care went into planning the seating so that everyone will feel comfortable and be seated with friends, family, or guests who share similar connections. Each seat was thoughtfully arranged with every guest in mind. Our reception team will gladly assist you in finding your assigned table.",
   },
   {
     question: "Is there parking available?",

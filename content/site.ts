@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "June 12, 2026",
-    time: "3:00 PM",
+    time: "2:00 PM",
     venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Lavender, Mint Green, Pink, Sky Blue",
@@ -15,7 +15,7 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "June 1, 2026.",
+      deadline: "May 20, 2026.",
       contact: "Christianne Minhah C. Teppang",
       phone: "0955 815 3245",
     },
@@ -26,7 +26,7 @@ export const siteConfig = {
     date: "June 12, 2026",
     day: "Friday",
     time: "2:00 PM",
-    entourageTime: "2:00 PM",
+    entourageTime: "1:30 PM",
     guestsTime: "2:30 PM",
   },
   reception: {
@@ -37,7 +37,7 @@ export const siteConfig = {
   },
   dressCode: {
       theme: "SEMI-FORMAL",
-    colors: "#e6e6fa, #d1fff4 , #ffd1dc , #d1f3ff",
+    colors: "Lavender:#e6e6fa, Pastel green:#d1fff4, Baby pink:#ffd1dc, Baby blue:#d1f3ff",
     sponsors: {
       male: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       female: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers."

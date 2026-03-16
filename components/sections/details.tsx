@@ -524,14 +524,25 @@ export function Details() {
 
               {/* Color palette for principal sponsors — keep explicit dress-code colors (not UI palette) */}
               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
-                {siteConfig.dressCode.colors.split(',').map((color) => (
-                  <div
-                    key={color.trim()}
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-motif-silver/40 hover:scale-110 transition-transform duration-300"
-                    style={{ backgroundColor: color.trim() }}
-                    title={color.trim()}
-                  />
-                ))}
+                {siteConfig.dressCode.colors.split(',').map((rawColor) => {
+                  const token = rawColor.trim()
+                  const [maybeName, maybeValue] = token.split(':').map((s) => s.trim())
+                  const label = maybeValue ? maybeName : token
+                  const value = maybeValue ? maybeValue : token
+
+                  return (
+                    <div key={token} className="flex flex-col items-center gap-1">
+                    <div
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-motif-silver/40 hover:scale-110 transition-transform duration-300"
+                      style={{ backgroundColor: value }}
+                      title={label}
+                    />
+                    <span className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-motif-deep/80 text-center leading-tight max-w-[5.5rem]">
+                      {label}
+                    </span>
+                  </div>
+                  )
+                })}
               </div>
               
               {/* Sponsors Dress Code Text */}
@@ -539,9 +550,9 @@ export function Details() {
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
                   <span className="font-semibold">Dress code:</span> Semi‑formal.
                 </p>
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
+                {/* <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
                   <span className="font-semibold">Palette inspiration:</span> {siteConfig.dressCode.colors}
-                </p>
+                </p> */}
                 <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed italic">
                   {siteConfig.dressCode.note}
                 </p>
