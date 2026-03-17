@@ -255,7 +255,7 @@ export function Countdown() {
         </h2>
         
         <p className="text-xs sm:text-sm md:text-base lg:text-lg text-motif-cream/95 font-light max-w-xl mx-auto leading-relaxed px-2">
-          Every heartbeat brings us closer to the moment when two hearts become one. Join us as they count down to forever.
+          Every heartbeat brings us closer to the moment when two hearts become one. Join us as we count down to forever.
         </p>
         
         {/* Decorative element below subtitle */}

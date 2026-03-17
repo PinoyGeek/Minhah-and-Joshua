@@ -242,7 +242,7 @@ export function SnapShare() {
           <p
             className={`${cormorant.className} text-xs sm:text-sm md:text-base text-motif-cream max-w-2xl mx-auto mt-2 sm:mt-4 leading-relaxed px-2`}
           >
-            Help us remember the little moments of {groomNickname} & {brideNickname}&apos;s day—every smile, embrace, and candid laugh. Your photos and clips complete our love story.
+          Help us remember the little moments of our wedding day. Every smile, embrace, and candid laugh. Your photos and clips complete our love story.
           </p>
           <div className="mx-auto mt-3 sm:mt-5 h-px w-20 sm:w-24" style={{ backgroundColor: "var(--color-motif-deep)" }} />
         </motion.div>
@@ -561,7 +561,7 @@ export function SnapShare() {
             <p
               className={`${cormorant.className} text-motif-deep text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4 px-2`}
             >
-              Thank you for helping make {groomNickname} & {brideNickname}&apos;s wedding celebration memorable. Your photos and messages create beautiful memories
+              Thank you for helping make our wedding celebration memorable. Your photos and messages create beautiful memories
               that we will treasure for a lifetime.
             </p>
             <div

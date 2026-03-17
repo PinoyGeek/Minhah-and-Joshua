@@ -53,11 +53,6 @@ const faqItems: FAQItem[] = [
       `The ceremony will be held at ${siteConfig.ceremony.location}. The reception will follow at ${siteConfig.reception.location}. You can find detailed directions, addresses, and maps in the Details section above.`,
   },
   {
-    question: "Is there an entourage call time?",
-    answer:
-      `Yes. Our entourage is requested to arrive by ${siteConfig.ceremony.entourageTime} so we can prepare and settle before the ceremony begins promptly at ${siteConfig.ceremony.time}.`,
-  },
-  {
     question: "How do I RSVP?",
     answer:
       `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list, confirm your attendance, and let us know if you'll be bringing companions. We kindly ask for your response on or before ${siteConfig.details.rsvp.deadline} to help us prepare for the big day. For any questions, please contact ${siteConfig.details.rsvp.contact} at ${siteConfig.details.rsvp.phone}.`,
@@ -65,7 +60,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I bring a guest or a date?",
     answer:
-    "While we absolutely love your little ones, our celebration will be an adults-only event, except for the children of the bride and groom’s immediate family. We hope you understand and look forward to celebrating together."
+    "We'd really love to celebrate with everyone, but due to limited seating we can only include the guests named on the invitation. Thank you for understanding."
   },
     {
     question: "Are children allowed at the event?",
@@ -90,7 +85,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Unplugged Ceremony",
     answer:
-      "EYES UP, PHONES DOWN, HEARTS OPEN.\n\nThe greatest gift you can give us during our ceremony is your presence. We respectfully request that guests refrain from taking photos or videos during the ceremony so our official photographers can capture every moment without distraction. We promise to share the beautiful photos with you afterward!\n\nOur professional photographers will be capturing every beautiful memory, and we promise to share the photos with everyone afterwards.",
+      "EYES UP, PHONES DOWN, HEARTS OPEN.\n\nThe greatest gift you can give us during our ceremony is your presence. We respectfully request that guests refrain from taking photos or videos during the ceremony so our official photographers can capture every moment without distraction. We promise to share the beautiful photos with you afterward!",
   },
   {
     question: "Can I take photos or videos during the reception?",
