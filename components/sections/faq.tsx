@@ -55,7 +55,8 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I RSVP?",
     answer:
-      `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list, confirm your attendance, and let us know if you'll be bringing companions. We kindly ask for your response on or before ${siteConfig.details.rsvp.deadline} to help us prepare for the big day. For any questions, please contact ${siteConfig.details.rsvp.contact} at ${siteConfig.details.rsvp.phone}.`,
+    `Please RSVP through the RSVP section on this invitation. Simply search for your name in the guest list and confirm your attendance. We kindly ask for your response on or before May 20, 2026. to help us prepare for the big day. For any questions, please contact 09916592500 or 09124896551.
+`
   },
   {
     question: "Can I bring a guest or a date?",
@@ -65,7 +66,7 @@ const faqItems: FAQItem[] = [
     {
     question: "Are children allowed at the event?",
     answer:
-      "As much as we adore your little ones, we have decided to keep our celebration an adult-only event to maintain an intimate and relaxed atmosphere for everyone.\n\nChildren who are part of the entourage are, of course, included. Otherwise, unless your child’s name is specifically listed on your invitation and included in your RSVP, we kindly ask that only adults attend.\n\nWe truly appreciate your understanding and can’t wait to celebrate this special day with you.",
+    "While we absolutely love your little ones, our celebration will be an adults-only event, except for the children of the bride and groom’s immediate family. We hope you understand and look forward to celebrating together."
   },
   {
     question: "Is there a dress code?",
