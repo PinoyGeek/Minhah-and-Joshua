@@ -10,8 +10,8 @@ export const siteConfig = {
     time: "2:00 PM",
     venue: "Mai Pavillion, 20 Tabing Ilog, Bacoor, Cavite",
     tagline: "are getting married!",
-    theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Lavender, Mint Green, Pink, Sky Blue",
-    motif: "#e6e6fa, #d1fff4 , #ffd1dc , #d1f3ff",
+    theme: "Our wedding palette is inspired by timeless elegance and warmth. Motif colors: dusty blue, sage, warm gray, cream.",
+    motif: "#8394A4, #97A98F, #96989C, #F0E4CC",
   },
   details: {
     rsvp: {
@@ -37,7 +37,7 @@ export const siteConfig = {
   },
   dressCode: {
       theme: "SEMI-FORMAL",
-    colors: "Lavender:#e6e6fa, Pastel green:#d1fff4, Baby pink:#ffd1dc, Baby blue:#d1f3ff",
+    colors: "Dusty blue:#8394A4, Sage:#97A98F, Warm gray:#96989C, Cream:#F0E4CC",
     sponsors: {
       male: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       female: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers."

@@ -30,6 +30,23 @@ const cinzel = Cinzel({
   weight: ["400", "600"],
 })  
 
+type DressCodeSwatch = { key: string; label: string; value: string }
+
+/** Parses `siteConfig.dressCode.colors` entries like `Lavender:#e6e6fa` or bare hex. */
+function parseDressCodeColorString(colors: string): DressCodeSwatch[] {
+  return colors.split(",").map((rawColor) => {
+    const token = rawColor.trim()
+    const [maybeName, maybeValue] = token.split(":").map((s) => s.trim())
+    return {
+      key: token,
+      label: maybeValue ? (maybeName || token) : token,
+      value: maybeValue ? maybeValue : token,
+    }
+  })
+}
+
+const dressCodeSwatches = parseDressCodeColorString(siteConfig.dressCode.colors)
+
 // Colors sourced from globals.css @theme inline — edit there to update everywhere
 
 export function Details() {
@@ -514,7 +531,7 @@ export function Details() {
               {/* Principal sponsor attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/guestAttire.png"
+                  src="/Details/guestAttireNew.png"
                   alt="Principal sponsor attire — follow the color palette"
                   fill
                   className="object-contain bg-[#FFF7F6]/50 p-2 sm:p-3"
@@ -524,14 +541,8 @@ export function Details() {
 
               {/* Color palette for principal sponsors — keep explicit dress-code colors (not UI palette) */}
               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
-                {siteConfig.dressCode.colors.split(',').map((rawColor) => {
-                  const token = rawColor.trim()
-                  const [maybeName, maybeValue] = token.split(':').map((s) => s.trim())
-                  const label = maybeValue ? maybeName : token
-                  const value = maybeValue ? maybeValue : token
-
-                  return (
-                    <div key={token} className="flex flex-col items-center gap-1">
+                {dressCodeSwatches.map(({ key, label, value }) => (
+                  <div key={key} className="flex flex-col items-center gap-1">
                     <div
                       className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-motif-silver/40 hover:scale-110 transition-transform duration-300"
                       style={{ backgroundColor: value }}
@@ -541,8 +552,7 @@ export function Details() {
                       {label}
                     </span>
                   </div>
-                  )
-                })}
+                ))}
               </div>
               
               {/* Sponsors Dress Code Text */}
@@ -560,52 +570,56 @@ export function Details() {
             </div>
           </div>
 
-          {/* Guest Attire */}
-          {/* <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-br from-[#F3C66C]/18 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
-            
-            <div className="relative bg-[#FDF6EA] backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-9 border border-[#E0C5A2] shadow-[0_16px_40px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_48px_rgba(0,0,0,0.6)] hover:border-[#F3C66C]/80 transition-all duration-300">
+          {/* Entourage Attire */}
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+
+            <div className="relative bg-motif-cream backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-9 border  hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-motif-deep/70 transition-all duration-300">
               <h4
-                className={`${montserrat.className} text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#8B1E1E] mb-4 sm:mb-5 md:mb-6 uppercase tracking-[0.16em] text-center px-2`}
+                className={`${cinzel.className} text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-motif-deep mb-4 sm:mb-5 md:mb-6 uppercase tracking-[0.16em] text-center px-2`}
               >
-                Guest Attire
+                Entourage Attire
               </h4>
 
-              <p className="text-center text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] text-[#C44569]/90 font-light leading-relaxed mb-4 sm:mb-5 md:mb-6 max-w-xl mx-auto px-3">
+              <p className={`${cinzel.className} text-center text-xs sm:text-sm md:text-base lg:text-lg text-motif-deep/90 font-light leading-relaxed mb-4 sm:mb-5 md:mb-6 max-w-xl mx-auto px-3`}>
                 Please follow the color palette below for your outfit.
               </p>
 
-        
-              <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-[#C44569]/30 mb-4 sm:mb-6 md:mb-8">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/guest (3).png"
-                  alt="Guest attire inspiration — follow the color palette"
+                  src="/Details/entourage.png"
+                  alt="Entourage attire — follow the color palette"
                   fill
                   className="object-contain bg-[#FFF7F6]/50 p-2 sm:p-3"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 672px"
                 />
               </div>
 
-        
               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
-                {["#CBA990", "#EBD3B9", "#F5E1C0"].map((color) => (
-                  <div
-                    key={color}
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border-2 border-white ring-2 ring-[#C44569]/30 hover:scale-110 transition-transform duration-300"
-                    style={{ backgroundColor: color }}
-                    title={color}
-                  />
+                {dressCodeSwatches.map(({ key, label, value }) => (
+                  <div key={key} className="flex flex-col items-center gap-1">
+                    <div
+                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-motif-silver/40 hover:scale-110 transition-transform duration-300"
+                      style={{ backgroundColor: value }}
+                      title={label}
+                    />
+                    <span className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-motif-deep/80 text-center leading-tight max-w-[5.5rem]">
+                      {label}
+                    </span>
+                  </div>
                 ))}
               </div>
-              
- 
-              <div className="text-center pt-3 sm:pt-4 border-t border-[#C44569]/20 px-3 sm:px-4">
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] text-[#C44569] leading-relaxed mb-3 sm:mb-4">
-                  <span className="font-semibold">Semi-Formal</span>
+
+              <div className="text-center pt-3 sm:pt-4 border-t border-motif-silver/70 px-3 sm:px-4">
+                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
+                  <span className="font-semibold">Dress code:</span> Semi‑formal.
+                </p>
+                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed italic">
+                  {siteConfig.dressCode.note}
                 </p>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
      {/* Gentle Reminders Container */}
