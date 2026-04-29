@@ -45,7 +45,28 @@ function parseDressCodeColorString(colors: string): DressCodeSwatch[] {
   })
 }
 
-const dressCodeSwatches = parseDressCodeColorString(siteConfig.dressCode.colors)
+const dressCodeSwatches = [
+  {
+    key: "Lavender",
+    label: "Lavender",
+    value: "#e6e6fa",
+  },
+  {
+    key: "Pastel Green",
+    label: "Pastel Green",
+    value: "#d1fff4",
+  },
+  {
+    key: "Baby Pink",
+    label: "Baby Pink",
+    value: "#ffd1dc",
+  },
+  {
+    key: "Baby Blue",
+    label: "Baby Blue",
+    value: "#d1f3ff",
+  },
+]
 
 // Colors sourced from globals.css @theme inline — edit there to update everywhere
 
@@ -531,7 +552,7 @@ export function Details() {
               {/* Principal sponsor attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/guestAttireNew.png"
+                  src="/Details/newGuest.png"
                   alt="Principal sponsor attire — follow the color palette"
                   fill
                   className="object-contain bg-[#FFF7F6]/50 p-2 sm:p-3"
@@ -596,7 +617,7 @@ export function Details() {
               </div>
 
               <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 flex-wrap mb-5 sm:mb-6 md:mb-7 px-2">
-                {dressCodeSwatches.map(({ key, label, value }) => (
+                {parseDressCodeColorString(siteConfig.dressCode.colors).map(({ key, label, value }) => (
                   <div key={key} className="flex flex-col items-center gap-1">
                     <div
                       className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full shadow-md border border-white ring-2 ring-motif-silver/40 hover:scale-110 transition-transform duration-300"
